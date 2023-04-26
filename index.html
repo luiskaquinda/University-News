@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University News</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+    <header>
+        <a href="#" id="logo">Un</a>
+
+        <button id="openMenu">&#9776;</button>
+
+        <nav id="menu">
+            <button id="closeMenu">X</button>
+            <a href="#">Início</a>
+            <a href="#">Categórias</a>
+            <a href="#">Entrevistas</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </header>
+
+    <aside>Relacionado</aside>
+
+    <main>
+        <h1>Notícias</h1>
+        <section class="container">
+            <div class="news">
+                <img src="assets/image/pattern.svg" alt=""> 
+                <div class="inner">
+                    <div class="date-category">
+                        <h3 class="category">Categoria</h3>
+                        <h3 class="date">18 de Abril de 2023</h3>
+                    </div>
+                    <div class="content">
+                        <h2 class="title">Titulo<h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt exercitationem, reprehenderit sapiente voluptate fuga error quia, vero excepturi, eaque tenetur omnis natus. Velit porro voluptas repellat perspiciatis maxime sapiente ducimus.
+                        </p>
+                        <a href="#">Saber mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="news">
+                <img src="assets/image/pattern.svg" alt=""> 
+                <div class="inner">
+                    <div class="date-category">
+                        <h3 class="category">Categoria</h3>
+                        <h3 class="date">18 de Abril de 2023</h3>
+                    </div>
+                    <div class="content">
+                        <h2 class="title">Titulo<h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt exercitationem, reprehenderit sapiente voluptate fuga error quia, vero excepturi, eaque tenetur omnis natus. Velit porro voluptas repellat perspiciatis maxime sapiente ducimus.
+                        </p>
+                        <a href="#">Saber mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="news">
+                <img src="assets/image/pattern.svg" alt=""> 
+                <div class="inner">
+                    <div class="date-category">
+                        <h3 class="category">Categoria</h3>
+                        <h3 class="date">18 de Abril de 2023</h3>
+                    </div>
+                    <div class="content">
+                        <h2 class="title">Titulo<h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt exercitationem, reprehenderit sapiente voluptate fuga error quia, vero excepturi, eaque tenetur omnis natus. Velit porro voluptas repellat perspiciatis maxime sapiente ducimus.
+                        </p>
+                        <a href="#">Saber mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="news">
+                <img src="assets/image/pattern.svg" alt=""> 
+                <div class="inner">
+                    <div class="date-category">
+                        <h3 class="category">Categoria</h3>
+                        <h3 class="date">18 de Abril de 2023</h3>
+                    </div>
+                    <div class="content">
+                        <h2 class="title">Titulo<h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt exercitationem, reprehenderit sapiente voluptate fuga error quia, vero excepturi, eaque tenetur omnis natus. Velit porro voluptas repellat perspiciatis maxime sapiente ducimus.
+                        </p>
+                        <a href="#">Saber mais</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>Rodapé</footer> 
+    
+    
+    <!-- Scripts -->
+    
+    <script type="text/javascript">
+
+        openMenu.addEventListener('click', () => {
+            menu.style.display = 'flex';
+
+            menu.style.right = (menu.offsetWidth * -1) + 'px';
+            
+            openMenu.style.display = 'none';
+
+            setTimeout(() => {
+                menu.style.opacity = '1';
+                menu.style.right = '0';
+            }, 10)
+            
+        })
+
+        closeMenu.addEventListener('click', () => {
+            menu.style.opacity = '0';
+
+            menu.style.right = (menu.offsetWidth * -1) + 'px';
+
+            setTimeout(() => {
+                menu.removeAttribute('style');
+                openMenu.removeAttribute('style');
+            }, 200)
+        })
+    </script>
+</body>
+</html>
