@@ -13,11 +13,7 @@
 }
 
 :root {
-    --color-green: #d4f7dc;
-    --color-green-yellow: #c2cd9ea3;
-    --color-yellow: #dbc092;
-    --color-brown: #e0846d;
-    --color-red: rgb(245, 20, 65);
+    --color-green: #299d59;
 }
 
 /* Chrome, Edge e Safari */
@@ -26,7 +22,7 @@
 }
 
 *::-webkit-scrollbar-track {
-    background: #0f54de;
+    background: #299d59;
 }
 
 *::-webkit-scrollbar-thumb {
@@ -56,10 +52,17 @@ header, nav, main, aside, footer {
 header {
     flex: 1 1 100vw;
     /*Aplicamos altura fixa para não apresentar rolamento vertical*/
+    align-items: center;
 }
 
 header #logo {
     flex: 0 1 200px;
+    font-size: 16px;
+    font-weight: 500;
+    padding-left: 4px;
+    margin-left: 20px;
+    line-height: 1;
+    border-left: 4px solid #bb3333;
 }
 
 #openMenu, #closeMenu {
@@ -79,8 +82,9 @@ nav {
 }
 
 nav a {
-    margin: 3%;
+    margin: 1%;
     font-size: 16px;
+    color: #212121;
 }
 
 main {
@@ -110,11 +114,10 @@ footer {
     flex: 1 1 100vw;
     height: 40px;
     width: 100vw; /*Aplicamos altura fixa para não apresentar rolamento vertical*/
-    background: var(--color-brown);
+    background: #bb3333;
     justify-content: center;
     align-items: center;
 }
-
 
 a {
     text-decoration: none;
@@ -122,7 +125,7 @@ a {
 }
 
 main > h1 {
-    padding: 10px 0px 0px 10px;
+    padding: 10px 0px 0px 20px;
 }
 
 .container, .inner, .date-category, .content, .news {
@@ -191,7 +194,7 @@ main > h1 {
 }
 
 .content a:hover {
-    color: #c60707f0;
+    color: #d70808;
 }
 
 .content p {
@@ -205,9 +208,23 @@ main > h1 {
 
 footer h2 {
     font-size: 16px;
-    color: #212121;
+    color: #e2e2e2;
 }
 
+#menu a {
+    padding: 4px;
+}
+
+#menu a:hover {
+    color: white;
+    background: #c60707f0;
+    border-radius: 4px;
+    transition: .8s;
+}
+
+header .strong {
+    color: #299d59;
+}
 
 @media only screen and (max-width: 923px) {
 
