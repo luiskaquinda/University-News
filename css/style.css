@@ -12,6 +12,14 @@
     scrollbar-color: orange orange;
 }
 
+:root {
+    --color-green: #d4f7dc;
+    --color-green-yellow: #c2cd9ea3;
+    --color-yellow: #dbc092;
+    --color-brown: #e0846d;
+    --color-red: rgb(245, 20, 65);
+}
+
 /* Chrome, Edge e Safari */
 ::-webkit-scrollbar {
     width: 6px;
@@ -24,7 +32,7 @@
 *::-webkit-scrollbar-thumb {
     background-color: #ffffffda;
     border-radius: 20px;
-    border: 1px solid rgba(195, 130, 9, 0.733);
+    border: 1px solid var(--color-green);
 }
 
 body {
@@ -32,18 +40,17 @@ body {
     flex-wrap: wrap;
     margin: 3px;
     flex: 1 1 100vw;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px; 
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-size: 14px; 
 }
 
 p {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 header, nav, main, aside, footer {
     display: flex;
     margin: 3px;
-    background: #a1a1a1;
 }
 
 header {
@@ -53,7 +60,6 @@ header {
 
 header #logo {
     flex: 0 1 200px;
-    background: #c9c9c9;
 }
 
 #openMenu, #closeMenu {
@@ -79,6 +85,7 @@ nav a {
 
 main {
     flex: 20 1 500px;
+    background: #c8c8c83c;
      /*Aplicamos altura fixa para não apresentar rolamento vertical, 
     a altura aqui calcula-se subtraindo de 100% da altura vertical (100vh) a altura do 
     footer (100px) da header (100px) mais a margin ((3px + 3px)*4) aplicado em torno dos quatro elementos*/
@@ -88,7 +95,7 @@ main {
 }
 
 main section {
-    width: 100%;
+    width: auto;
     height: 100vh;
     margin: 10px;
     /*background: linear-gradient(#9a9a9a, #5a5a5a, #1a1a1a);*/
@@ -101,12 +108,21 @@ aside {
 
 footer {
     flex: 1 1 100vw;
-    height: 100px; /*Aplicamos altura fixa para não apresentar rolamento vertical*/
+    height: 40px;
+    width: 100vw; /*Aplicamos altura fixa para não apresentar rolamento vertical*/
+    background: var(--color-brown);
+    justify-content: center;
+    align-items: center;
 }
+
 
 a {
     text-decoration: none;
     color: inherit;
+}
+
+main > h1 {
+    padding: 10px 0px 0px 10px;
 }
 
 .container, .inner, .date-category, .content, .news {
@@ -147,18 +163,18 @@ a {
 }
 
 .category {
-    padding: 4px;
-    background: #528cff;
+    padding: 4px 16px;
+    background: #bb3333;
     border-radius: 4px;
     color: white;
     text-align: center;
 }
 
 .date {
-    color: white;
+    color: rgb(54, 54, 54);
     padding: 4px;
     border-radius: 4px;
-    border: 2px solid #528cff;
+    border: 2px solid #bb3333;
     text-align: center;
 }
 
@@ -171,11 +187,27 @@ a {
 
 .content a {
     font-size: 16px;
+    color: rgba(179, 64, 64, 0.907);
+}
+
+.content a:hover {
+    color: #c60707f0;
+}
+
+.content p {
+    font-size: 16px;
+    color: #2b2b2b;
 }
 
 .title {
-    color: rgb(198, 7, 7);
+    color: rgba(198, 7, 7, 0.907);
 }
+
+footer h2 {
+    font-size: 16px;
+    color: #212121;
+}
+
 
 @media only screen and (max-width: 923px) {
 
