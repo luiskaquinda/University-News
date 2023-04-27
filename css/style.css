@@ -195,6 +195,8 @@ main > h1 {
 
 .content a:hover {
     color: #d70808;
+    text-decoration: underline;
+    transition: .6s;
 }
 
 .content p {
