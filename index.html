@@ -17,7 +17,7 @@
         <nav id="menu">
             <button id="closeMenu">X</button>
             <a href="#">Início</a>
-            <a href="#">Categórias</a>
+            <a href="#" id="cat">Categórias</a>
             <a href="#">Artigos</a>
             <a href="#">Entrevistas</a>
             <a href="#">Contacto</a>
@@ -26,12 +26,12 @@
 
     <section class="categories">
         <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li class="Nacional">Nacional</li>
+            <li class="Internacional">Internacional</li>
+            <li class="Moda">Moda</li>
+            <li class="Entrevistas">Entrevistas</li>
+            <li class="Desporto">Desporto</li>
+            <li class="Arte">Arte</li>
         </ul>
     </section>
 
@@ -144,6 +144,12 @@
     <!-- Scripts -->
     
     <script type="text/javascript">
+
+        cat.addEventListener('click', () => {
+            let categories = document.getElementsByClassName('cat');
+
+            categories.style.display = 'block';
+        })
 
         openMenu.addEventListener('click', () => {
             menu.style.display = 'flex';

@@ -249,6 +249,23 @@ header .strong {
     color: #299d59;
 }
 
+.categories {
+    width: 100vw;
+    display: none;
+}
+
+.categories ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 12px;
+    margin: 24px;
+}
+
+.categories ul li {
+
+}
+
 
 /*
 ================================================
