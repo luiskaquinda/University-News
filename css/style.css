@@ -119,6 +119,16 @@ footer {
     align-items: center;
 }
 
+.bunner {
+    width: 100vw;
+    height: 300px;
+}
+
+.bunner img {
+    width: 100vw;
+    height: 300px;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -166,18 +176,19 @@ main > h1 {
 }
 
 .category {
-    padding: 4px 16px;
-    background: #bb3333;
+    padding: 6px 5px;
+    background: #eb2525bf;
     border-radius: 4px;
     color: white;
     text-align: center;
+    font-size: 14px;
 }
 
 .date {
-    color: rgb(54, 54, 54);
+    color: rgb(81, 80, 80);
     padding: 4px;
     border-radius: 4px;
-    border: 2px solid #bb3333;
+    border: 2px solid #eb2525bf;
     text-align: center;
 }
 
@@ -201,7 +212,7 @@ main > h1 {
 
 .content p {
     font-size: 16px;
-    color: #2b2b2b;
+    color: #545454;
 }
 
 .title {
@@ -227,6 +238,87 @@ footer h2 {
 header .strong {
     color: #299d59;
 }
+
+
+/*
+================================================
+BUNNER CSS
+================================================
+*/
+.bunner-content {
+    height: 420px;
+    width: 100vw;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.navigation {
+    position: absolute;
+    bottom: 94px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.bar {
+    width: 70px;
+    height: 17px;
+    border: 2px solid #fff;
+    margin: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .6s;
+}
+
+.bar:hover {
+    background-color: #fff;
+}
+
+input {
+    display: none;
+}
+.slides {
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+
+
+.slide {
+    width: 20%;
+    transition: .10s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+#slide-1:checked ~ .s-1 {
+    margin-left: 0;
+}
+
+#slide-2:checked ~ .s-01 {
+    margin-left: -20%;
+}
+
+#slide-3:checked ~ .s-01 {
+    margin-left: -40%;
+}
+
+#slide-4:checked ~ .s-01 {
+    margin-left: -60%;
+}
+
+#slide-5:checked ~ .s-01 {
+    margin-left: -80%;
+}
+
+/*
+================================================
+END BUNNER CSS
+================================================
+*/
 
 @media only screen and (max-width: 923px) {
 
