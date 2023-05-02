@@ -16,13 +16,57 @@
 
         <nav id="menu">
             <button id="closeMenu">X</button>
-            <a href="#">Início</a>
+            <a href="#" id="home">Início</a>
             <a href="#" id="cat">Categórias</a>
-            <a href="#">Artigos</a>
-            <a href="#">Entrevistas</a>
-            <a href="#">Contacto</a>
+            <a href="#" id="articles">Artigos</a>
+            <a href="#" id="interview">Entrevistas</a>
+            <a href="#" id="contact">Contacto</a>
         </nav>
     </header>
+
+    <section class="bunner-content">
+        <div class="slide-container active">
+            <div class="slide">
+             <div class="content-slider">
+                <span>Destaques</span>
+                <h3>Title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde similique ipsam quibusdam inventore earum, quo assumenda, quam molestiae 
+                   laborum praesentium velit accusantium iure excepturi. Iste dolores id odit veritatis ex?</p>
+                <a href="https://ftd.com.br/" class="knowmore-btn">Saiba mais</a>
+             </div>
+            </div>
+        </div>
+
+        <div class="slide-container">
+            <div class="slide">
+             <div class="content-slider">
+                <span>Destaques</span>
+                <h3>Title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit aliquid assumenda eaque, inventore 
+                   pariatur molestias hic, aspernatur nihil ipsam eius magni incidunt? Incidunt eveniet non magnam 
+                   reprehenderit beatae doloribus soluta.</p>
+                <a href="https://ftd.com.br/" class="knowmore-btn">Saiba mais</a>
+             </div>
+            </div>
+        </div>
+        
+        <div class="slide-container">
+            <div class="slide">
+             <div class="content-slider">
+                <span>Destaques</span>
+                <h3>Title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi eos, qui obcaecati nulla 
+                aliquid non iure autem, esse aliquam itaque rerum nostrum 
+                repudiandae! At eligendi quas provident omnis voluptatem. Dignissimos..</p>
+                <a href="https://www.escolasconectadas.org.br/cursos" class="knowmore-btn">Saiba mais</a>
+             </div>
+            </div>
+        </div>
+
+        
+        <div id="prev" onclick="prev()"> <img src="assets/icons/arrow-circle-left.svg" alt="prev"> </div>
+        <div id="next" onclick="next()"> <img src="assets/icons/arrow-circle-right.svg" alt="next"> </div>
+    </section>
 
     <section class="categories">
         <ul>
@@ -33,47 +77,6 @@
             <li class="Desporto">Desporto</li>
             <li class="Arte">Arte</li>
         </ul>
-    </section>
-
-    <section class="bunner-content">
-        <div class="slide-container active">
-            <div class="slide">
-             <div class="content-slider">
-               <h3>Title</h3>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde similique ipsam quibusdam inventore earum, quo assumenda, quam molestiae 
-                   laborum praesentium velit accusantium iure excepturi. Iste dolores id odit veritatis ex?</p>
-               <a href="https://ftd.com.br/" class="knowmore-btn">Saiba mais</a>
-             </div>
-            </div>
-        </div>
-
-        <div class="slide-container">
-            <div class="slide">
-             <div class="content-slider">
-               <h3>Title</h3>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit aliquid assumenda eaque, inventore 
-                   pariatur molestias hic, aspernatur nihil ipsam eius magni incidunt? Incidunt eveniet non magnam 
-                   reprehenderit beatae doloribus soluta.</p>
-               <a href="https://ftd.com.br/" class="knowmore-btn">Saiba mais</a>
-             </div>
-            </div>
-        </div>
-        
-        <div class="slide-container">
-            <div class="slide">
-             <div class="content-slider">
-               <h3>Title</h3>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi eos, qui obcaecati nulla 
-                aliquid non iure autem, esse aliquam itaque rerum nostrum 
-                repudiandae! At eligendi quas provident omnis voluptatem. Dignissimos..</p>
-               <a href="https://www.escolasconectadas.org.br/cursos" class="knowmore-btn">Saiba mais</a>
-             </div>
-            </div>
-        </div>
-
-        
-        <div id="prev" onclick="prev()"> <img src="assets/icons/arrow-circle-left.svg" alt="prev"> </div>
-        <div id="next" onclick="next()"> <img src="assets/icons/arrow-circle-right.svg" alt="next"> </div>
     </section>
 
     <main>
@@ -145,10 +148,11 @@
     
     <script type="text/javascript">
 
-        cat.addEventListener('click', () => {
-            let categories = document.getElementsByClassName('cat');
+        let categories = document.querySelector('.categories')
+        let button = document.querySelector('#cat');
 
-            categories.style.display = 'block';
+        button.addEventListener('click', () => {
+            categories.style.display = 'flex';
         })
 
         openMenu.addEventListener('click', () => {

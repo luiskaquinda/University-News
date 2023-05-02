@@ -22,13 +22,12 @@
 }
 
 *::-webkit-scrollbar-track {
-    background: #299d59;
+    background: #ff3333a9;
 }
 
 *::-webkit-scrollbar-thumb {
     background-color: #ffffffda;
-    border-radius: 20px;
-    border: 1px solid var(--color-green);
+    border-radius: 10px;
 }
 
 body {
@@ -118,6 +117,7 @@ footer {
     background: #bb3333;
     justify-content: center;
     align-items: center;
+    border-radius: 4px;
 }
 
 .bunner {
@@ -238,7 +238,7 @@ footer h2 {
     padding: 4px;
 }
 
-#menu a:hover {
+#menu a:not(#cantact):hover {
     color: white;
     background: #c60707f0;
     border-radius: 4px;
@@ -247,11 +247,6 @@ footer h2 {
 
 header .strong {
     color: #299d59;
-}
-
-.categories {
-    width: 100vw;
-    display: none;
 }
 
 .categories ul {
@@ -263,7 +258,26 @@ header .strong {
 }
 
 .categories ul li {
+    background: #d8d8d8;
+    color: rgb(74, 74, 74);
+    padding: 8px;
+    border-radius: 4px;
+}
 
+.categories ul li:hover {
+    cursor: pointer;
+}
+
+
+.categories {
+    width: 100vw;
+    display: none;
+}
+
+#contact {
+    color: white;
+    background: #c60707f0;
+    border-radius: 4px;
 }
 
 
@@ -392,6 +406,17 @@ BUNNER CSS
 
 .bunner-content #next{
     right: 20px;
+}
+
+.content-slider span {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    display: block;
+    background: linear-gradient(to right, #e63c3cc3, transparent);
+
+    border-radius: 4px;
+    padding: 4px 4px;
+    margin: 32px 0px 12px 0px;
 }
 
 
