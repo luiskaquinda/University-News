@@ -126,11 +126,11 @@ a {
     color: inherit;
 }
 
-main img {
-    width: 524px;
+.container img {
+    width: 80vw;
     height: 40%;
 
-    margin-top: 24px;
+    margin: 24px 12px;
 }
 
 #openMenu, #closeMenu {
@@ -143,6 +143,10 @@ main img {
     display: none;
 }
 
+#menu li {
+    list-style: none;
+    margin: 8px;
+}
 
 #menu a {
     padding: 4px;
@@ -162,12 +166,33 @@ main img {
 }
 
 .new-body {
+    width: 80%;
     padding: 12px;
 }
 
 .new-body h1 {
-    color: #bb3333;
-    margin-bottom: 10px 0px;
+    background: #bb3333;
+    padding: 4px;
+    border-radius: 4px;
+
+    font-size: 24px;
+    color: #ffffff;
+    margin: 10px 0px;
+}
+
+.new-body p {
+    font-size: 1rem;
+    word-spacing: 4px;
+    line-height: 28px;
+
+    background: #c4ecfd0e;
+    padding: 16px;
+}
+
+#footer h2 {
+    color: white;
+    text-align: justify;
+    font-size: 16px;
 }
 
 
