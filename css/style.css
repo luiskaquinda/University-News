@@ -207,13 +207,22 @@ main > h1 {
 
 .content a {
     font-size: 16px;
-    color: rgba(179, 64, 64, 0.907);
+    color: rgba(255, 255, 255, 0.907);
+    font-weight: 400;
+
+    background: linear-gradient(to right,  #b02b2b, transparent);
+    border-radius: 4px;
+    padding: 4px;
+    margin-top: 8px;
+
+    transition: .6s;
 }
 
 .content a:hover {
-    color: #d70808;
-    text-decoration: underline;
+    color: #ffffff;
     transition: .6s;
+
+    background: linear-gradient(to left, transparent, #fd2727);
 }
 
 .content p {
