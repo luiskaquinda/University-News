@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticia</title>
+    <link rel="stylesheet" href="../css/new.css">
+</head>
+<body>
+    
+    <header>
+        <a href="../index.html" id="logo">University <br><strong class="strong">News</strong></a>
+
+        <button id="openMenu">&#9776;</button>
+
+        <nav id="menu">
+            <button id="closeMenu">X</button>
+            <li><a href="../index.html" id="home">Início</a></li>
+            <li><a href="#" id="cat">Categórias</a></li>
+            <li><a href="#" id="articles">Artigos</a></li>
+            <li><a href="#" id="interview">Entrevistas</a></li>
+            <li><a href="#" id="contact">Contacto</a></li>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container">
+            
+            <img src="http://source.unsplash.com/random?a=1" alt="imagem da noticia">
+            
+            <div class="new-body">
+                <h1>Titulo</h1>
+                <p class="details">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi numquam doloribus quidem quia blanditiis beatae porro et earum vitae est adipisci, optio corporis. Debitis dignissimos possimus a, architecto odit sint! <br>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet minima, animi ipsa quos qui voluptatibus, assumenda nemo, fugit natus cumque ducimus. Dicta fuga officia doloremque iusto blanditiis ad maxime provident! <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil beatae minus magnam eius totam itaque nostrum expedita laborum, quisquam quia, modi architecto laudantium facere minima veritatis provident vel molestias fugit! <br><br>
+
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi numquam doloribus quidem quia blanditiis beatae porro et earum vitae est adipisci, optio corporis. Debitis dignissimos possimus a, architecto odit sint!<br>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet minima, animi ipsa quos qui voluptatibus, assumenda nemo, fugit natus cumque ducimus. Dicta fuga officia doloremque iusto blanditiis ad maxime provident!<br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil beatae minus magnam eius totam itaque nostrum expedita laborum, quisquam quia, modi architecto laudantium facere minima veritatis provident vel molestias fugit!<br><br>
+
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi numquam doloribus quidem quia blanditiis beatae porro et earum vitae est adipisci, optio corporis. Debitis dignissimos possimus a, architecto odit sint!<br>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet minima, animi ipsa quos qui voluptatibus, assumenda nemo, fugit natus cumque ducimus. Dicta fuga officia doloremque iusto blanditiis ad maxime provident!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil beatae minus magnam eius totam itaque nostrum expedita laborum, quisquam quia, modi architecto laudantium facere minima veritatis provident vel molestias fugit!
+
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi numquam doloribus quidem quia blanditiis beatae porro et earum vitae est adipisci, optio corporis. Debitis dignissimos possimus a, architecto odit sint!<br>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet minima, animi ipsa quos qui voluptatibus, assumenda nemo, fugit natus cumque ducimus. Dicta fuga officia doloremque iusto blanditiis ad maxime provident!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil beatae minus magnam eius totam itaque nostrum expedita laborum, quisquam quia, modi architecto laudantium facere minima veritatis provident vel molestias fugit!
+                </p>
+            </div>
+        </section>
+    </main>
+    
+    <footer id="footer">
+        <h2>University News &copy; 2023 - Todos os direitos reservados</h2>
+    </footer> 
+    
+    
+    <!-- Scripts -->
+    
+    <script type="text/javascript">
+
+        let categories = document.querySelector('.categories')
+        let button = document.querySelector('#cat');
+
+        button.addEventListener('click', () => {
+            categories.style.display = 'flex';
+        })
+
+        openMenu.addEventListener('click', () => {
+            menu.style.display = 'flex';
+
+            menu.style.right = (menu.offsetWidth * -1) + 'px';
+            
+            openMenu.style.display = 'none';
+
+            setTimeout(() => {
+                menu.style.opacity = '1';
+                menu.style.right = '0';
+            }, 10)
+            
+        })
+
+        closeMenu.addEventListener('click', () => {
+            menu.style.opacity = '0';
+
+            menu.style.right = (menu.offsetWidth * -1) + 'px';
+
+            setTimeout(() => {
+                menu.removeAttribute('style');
+                openMenu.removeAttribute('style');
+            }, 200)
+        })
+    </script>
+</body>
+</html>

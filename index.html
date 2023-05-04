@@ -10,122 +10,146 @@
 <body>
     
     <header>
-        <a href="#" id="logo">University <br><strong class="strong">News</strong></a>
+        <a href="/index.html" id="logo">University <br><strong class="strong">News</strong></a>
 
         <button id="openMenu">&#9776;</button>
 
         <nav id="menu">
             <button id="closeMenu">X</button>
-            <a href="#">Início</a>
-            <a href="#">Categórias</a>
-            <a href="#">Artigos</a>
-            <a href="#">Entrevistas</a>
-            <a href="#">Contacto</a>
+            <a href="/index.html" id="home">Início</a>
+            <a href="#" id="cat">Categórias</a>
+            <a href="#" id="articles">Artigos</a>
+            <a href="#" id="interview">Entrevistas</a>
+            <a href="#" id="contact">Contacto</a>
         </nav>
     </header>
 
     <section class="bunner-content">
-        <div class="slides">
-            
-            <input type="radio" name="slide" id="slide-1" checked>
-            <input type="radio" name="slide" id="slide-2">
-            <input type="radio" name="slide" id="slide-3">
-            <input type="radio" name="slide" id="slide-4">
-            <input type="radio" name="slide" id="slide-5">
-
-            <div class="slide s-01"> 
-                <img src="assets/image/1.jpg" alt="Paisagem medieval com montanhas">
-            </div>
-            <div class="slide s-02">
-                <img src="assets/image/2.jpg" alt="Paisagem fantasia com arvores rochas">
-            </div>
-            <div class="slide s-03">
-                <img src="assets/image/3.jpg" alt="Capa do jogo cities skylines">
-            </div>
-            <div class="slide s-04">
-                <img src="assets/image/4.jpg" alt="Lugar fantasia com cristais e montanhas">
-            </div>
-            <div class="slide s-05">
-                <img src="assets/image/5.jpg" alt="capa do jogo the first tree">
-            </div>
-
-            <div class="navigation">
-                <label class="bar" for="slide-1"></label>
-                <label class="bar" for="slide-2"></label>
-                <label class="bar" for="slide-3"></label>
-                <label class="bar" for="slide-4"></label>
-                <label class="bar" for="slide-5"></label>
+        <div class="slide-container active">
+            <div class="slide">
+             <div class="content-slider">
+                <span>Destaques</span>
+                <h3>Title 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde similique ipsam quibusdam inventore earum, quo assumenda, quam molestiae 
+                   laborum praesentium velit accusantium iure excepturi. Iste dolores id odit veritatis ex?</p>
+                <a href="/pages/new.html" class="knowmore-btn" >Saiba mais</a>
+             </div>
             </div>
         </div>
+
+        <div class="slide-container">
+            <div class="slide">
+             <div class="content-slider">
+                <span>Destaques</span>
+                <h3>Title 2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit aliquid assumenda eaque, inventore 
+                   pariatur molestias hic, aspernatur nihil ipsam eius magni incidunt? Incidunt eveniet non magnam 
+                   reprehenderit beatae doloribus soluta.</p>
+                <a href="/pages/new.html" class="knowmore-btn">Saiba mais</a>
+             </div>
+            </div>
+        </div>
+        
+        <div class="slide-container">
+            <div class="slide">
+             <div class="content-slider">
+                <span>Destaques</span>
+                <h3>Title 3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi eos, qui obcaecati nulla 
+                aliquid non iure autem, esse aliquam itaque rerum nostrum 
+                repudiandae! At eligendi quas provident omnis voluptatem. Dignissimos..</p>
+                <a href="/pages/new.html" class="knowmore-btn">Saiba mais</a>
+             </div>
+            </div>
+        </div>
+
+        
+        <div id="prev" onclick="prev()"> <img src="assets/icons/arrow-circle-left.svg" alt="prev"> </div>
+        <div id="next" onclick="next()"> <img src="assets/icons/arrow-circle-right.svg" alt="next"> </div>
+    </section>
+
+    <section class="categories">
+        <ul>
+            <li class="Nacional">Nacional</li>
+            <li class="Internacional">Internacional</li>
+            <li class="Moda">Moda</li>
+            <li class="Entrevistas">Entrevistas</li>
+            <li class="Desporto">Desporto</li>
+            <li class="Arte">Arte</li>
+        </ul>
     </section>
 
     <main>
         <h1>Notícias</h1>
         <section class="container">
-            <div class="news">
-                <img src="assets/image/pattern.svg" alt=""> 
-                <div class="inner">
+            
+            <article class="news">
+                <img src="http://source.unsplash.com/random/200x200?d=1" alt=""> 
+                <div class="content">
+                    <h2 class="title">Titulo<h2>
                     <div class="date-category">
                         <h3 class="category">Desporto</h3>
                         <h3 class="date">18 de Abril de 2023</h3>
                     </div>
-                    <div class="content">
-                        <h2 class="title">Titulo<h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt exercitationem, reprehenderit sapiente voluptate fuga error quia, vero excepturi, eaque tenetur omnis natus. Velit porro voluptas repellat perspiciatis maxime sapiente ducimus.
-                        </p>
-                        <a href="#">Saber mais</a>
-                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt exercitationem, reprehenderit sapiente voluptate fuga error quia, vero excepturi, eaque tenetur omnis natus. Velit porro voluptas repellat perspiciatis maxime sapiente ducimus.
+                    </p>
+                    <a href="/pages/new.html" target="_blank">Saber mais</a>
                 </div>
-            </div>
-            <div class="news">
-                <img src="assets/image/pattern.svg" alt=""> 
-                <div class="inner">
+            </article>
+
+            <article class="news">
+                <img src="https://source.unsplash.com/random/200x200?b=1" alt=""> 
+                <div class="content">
+                    <h2 class="title">Titulo<h2>
                     <div class="date-category">
-                        <h3 class="category">Internacional</h3>
+                        <h3 class="category">Arte</h3>
                         <h3 class="date">18 de Abril de 2023</h3>
                     </div>
-                    <div class="content">
-                        <h2 class="title">Titulo<h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt exercitationem, reprehenderit sapiente voluptate fuga error quia, vero excepturi, eaque tenetur omnis natus. Velit porro voluptas repellat perspiciatis maxime sapiente ducimus.
-                        </p>
-                        <a href="#">Saber mais</a>
-                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt exercitationem, reprehenderit sapiente voluptate fuga error quia, vero excepturi, eaque tenetur omnis natus. Velit porro voluptas repellat perspiciatis maxime sapiente ducimus.
+                    </p>
+                    <a href="/pages/new.html" target="_blank">Saber mais</a>
                 </div>
-            </div>
-            <div class="news">
-                <img src="assets/image/pattern.svg" alt=""> 
-                <div class="inner">
+            </article>
+
+            <article class="news">
+                <img src="http://source.unsplash.com/random/200x200?a=1" alt=""> 
+                <div class="content">
+                    <h2 class="title">Titulo<h2>
                     <div class="date-category">
                         <h3 class="category">Nacional</h3>
                         <h3 class="date">18 de Abril de 2023</h3>
                     </div>
-                    <div class="content">
-                        <h2 class="title">Titulo<h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt exercitationem, reprehenderit sapiente voluptate fuga error quia, vero excepturi, eaque tenetur omnis natus. Velit porro voluptas repellat perspiciatis maxime sapiente ducimus.
-                        </p>
-                        <a href="#">Saber mais</a>
-                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt exercitationem, reprehenderit sapiente voluptate fuga error quia, vero excepturi, eaque tenetur omnis natus. Velit porro voluptas repellat perspiciatis maxime sapiente ducimus.
+                    </p>
+                    <a href="pages/new.html" target="_blank">Saber mais</a>
                 </div>
-            </div>
-            <div class="news">
-                <img src="assets/image/pattern.svg" alt=""> 
-                <div class="inner">
+            </article>
+
+            <article class="news">
+                <img src="http://source.unsplash.com/random/200x200?c=1" alt=""> 
+                <div class="content">
+                    <h2 class="title">Titulo<h2>
                     <div class="date-category">
-                        <h3 class="category">Moda</h3>
+                        <h3 class="category">Internacional</h3>
                         <h3 class="date">18 de Abril de 2023</h3>
                     </div>
-                    <div class="content">
-                        <h2 class="title">Titulo<h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt exercitationem, reprehenderit sapiente voluptate fuga error quia, vero excepturi, eaque tenetur omnis natus. Velit porro voluptas repellat perspiciatis maxime sapiente ducimus.
-                        </p>
-                        <a href="#">Saber mais</a>
-                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt exercitationem, reprehenderit sapiente voluptate fuga error quia, vero excepturi, eaque tenetur omnis natus. Velit porro voluptas repellat perspiciatis maxime sapiente ducimus.
+                    </p>
+                    <a href="/pages/new.html" target="_blank">Saber mais</a>
                 </div>
-            </div>
+            </article>
         </section>
     </main>
 
-    <aside> Relacionados <img src="" alt=""> </aside>
+    <aside>
+
+        <figure>
+            <figcaption>Publicidade</figcaption>
+            <img src="http://source.unsplash.com/random/200x200?c=1"
+             alt="Elephant at sunset">
+        </figure>
+
+    </aside>
     
     <footer id="footer">
         <h2>University News &copy; 2023 - Todos os direitos reservados</h2>
@@ -135,6 +159,13 @@
     <!-- Scripts -->
     
     <script type="text/javascript">
+
+        let categories = document.querySelector('.categories')
+        let button = document.querySelector('#cat');
+
+        button.addEventListener('click', () => {
+            categories.style.display = 'flex';
+        })
 
         openMenu.addEventListener('click', () => {
             menu.style.display = 'flex';
@@ -160,6 +191,23 @@
                 openMenu.removeAttribute('style');
             }, 200)
         })
+
+        let slides = document.querySelectorAll('.slide-container');
+        let index = 0;
+
+        function next(){
+            slides[index].classList.remove('active');
+            index = (index + 1) % slides.length;
+            slides[index].classList.add('active');
+        }
+
+        function prev(){
+            slides[index].classList.remove('active');
+            index = (index - 1 + slides.length) % slides.length;
+            slides[index].classList.add('active');
+        }
+
+        setInterval(next, 4000);
     </script>
 </body>
 </html>
