@@ -89,7 +89,8 @@ nav a {
 
 main {
     flex: 20 1 500px;
-    background: #c8c8c83c;
+    border-radius: 4px;
+    background: #8686863c;
 
     flex-wrap: wrap;
     overflow: auto;
@@ -108,7 +109,7 @@ aside {
 
 footer {
     flex: 1 1 100vw;
-    height: 40px;
+    height: 30px;
     width: 100vw; 
     background: #bb3333;
     justify-content: center;
@@ -207,22 +208,23 @@ main > h1 {
 
 .content a {
     font-size: 16px;
-    color: rgba(255, 255, 255, 0.907);
+    color: rgba(23, 23, 23, 0.907);
     font-weight: 400;
 
-    background: linear-gradient(to right,  #b02b2b, transparent);
+    background: linear-gradient(to right, transparent, #fd2727);
     border-radius: 4px;
-    padding: 4px;
-    margin-top: 8px;
-
-    transition: .6s;
+    padding: 2px;
+    transition: .3s;
 }
 
 .content a:hover {
     color: #ffffff;
-    transition: .6s;
+    transition: .3s;
 
     background: linear-gradient(to left, transparent, #fd2727);
+    border-radius: 4px;
+    padding: 4px;
+    margin-top: 8px;
 }
 
 .content p {
@@ -235,7 +237,7 @@ main > h1 {
 }
 
 footer h2 {
-    font-size: 16px;
+    font-size: 14px;
     color: #e2e2e2;
 }
 
@@ -363,7 +365,7 @@ BUNNER CSS
 }
 
 .bunner-content .slide-container:nth-child(1) .slide{
-    background: url(https://source.unsplash.com/random/300x600?b=1);
+    background: url(https://source.unsplash.com/random/300x600?a=1);
     background-size:100vw;
     background-repeat: no-repeat;
     width: 99vw;
@@ -372,7 +374,7 @@ BUNNER CSS
 }
 
 .bunner-content .slide-container:nth-child(2) .slide{
-    background: url(https://source.unsplash.com/random/300x600?b=1);
+    background: url(https://source.unsplash.com/random/300x600?c=1);
     background-size:100vw;
     background-repeat: no-repeat;
     width: 99vw;
@@ -381,7 +383,7 @@ BUNNER CSS
 }
 
 .bunner-content .slide-container:nth-child(3) .slide{
-    background: url(https://source.unsplash.com/random/300x600?b=1);
+    background: url(https://source.unsplash.com/random/300x600?d=1);
     background-size:100vw;
     background-repeat: no-repeat;
     width: 99vw;

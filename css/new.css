@@ -249,4 +249,8 @@ a {
         opacity: 0;
         transition: .3s;
     }
+
+    #footer h2 {
+        font-size: 12px;
+    }
 }
