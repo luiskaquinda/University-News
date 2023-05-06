@@ -205,8 +205,8 @@ ul li {
     flex: 1 1 100%;
 }
 
-.phone-street ul li p {
-    margin: 6px 4px;
+.our-phone-email-street .phone-street ul li p {
+    margin: 8px 4px;
     color: #3f3f3f;
 }
 
@@ -219,8 +219,8 @@ ul li {
 }
 
 .social-networks ul li a img {
-    max-width: 6%;
-    margin: 8px;
+    max-width: 20%;
+    margin: 8px 2px;
 
     transition: .3s;
 }
@@ -343,4 +343,30 @@ ul li {
 footer h2 {
     font-size: 14px;
     color: #e2e2e2;
+}
+
+
+/*
+======================================
+MEDIA QUERIES
+======================================
+*/
+
+
+@media only screen and (max-width: 767px) {
+    .container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    
+        flex-direction: column-reverse;
+        width: auto;
+        height: 100vh;
+        padding: 12px;
+    }
+
+    .our-contacts {
+        align-items: flex-start;
+        justify-content: center;
+    }
 }
