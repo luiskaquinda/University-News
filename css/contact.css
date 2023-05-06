@@ -160,6 +160,7 @@ a {
 
 fieldset {
     border: .2px solid #8d8d8d;
+    border-radius: 4px;
 }
 
 fieldset legend {
@@ -266,7 +267,7 @@ ul li {
 
 .buttons-contents input {
     border: 0;
-    padding: 6px 12px;
+    padding: 8px 16px;
     border-radius: 4px;
     cursor: pointer;
     color: white;
@@ -309,7 +310,7 @@ ul li {
 }
 
 #fmessage::-webkit-input-placeholder {
-line-height: 1;
+    line-height: 1;
 }
 
 .form-components input:focus, .form-components textarea:focus {
@@ -323,7 +324,7 @@ line-height: 1;
 }
 
 #fname:hover, #femail:hover, #fmessage:hover {
-    border: 1px solid #767676;
+    border: 1px solid #a4a3a3;
 }
 
 #fmessage {
