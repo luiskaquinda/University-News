@@ -366,7 +366,7 @@ BUNNER CSS
 }
 
 .bunner-content .slide-container:nth-child(1) .slide{
-    background: url(https://source.unsplash.com/random/300x600?a=1);
+    background: url(../assets/image/1.jpg);
     background-size:100vw;
     background-repeat: no-repeat;
     width: 99vw;
@@ -375,7 +375,7 @@ BUNNER CSS
 }
 
 .bunner-content .slide-container:nth-child(2) .slide{
-    background: url(https://source.unsplash.com/random/300x600?c=1);
+    background: url(../assets/image/2.jpg);
     background-size:100vw;
     background-repeat: no-repeat;
     width: 99vw;
@@ -384,7 +384,7 @@ BUNNER CSS
 }
 
 .bunner-content .slide-container:nth-child(3) .slide{
-    background: url(https://source.unsplash.com/random/300x600?d=1);
+    background: url(../assets/image/3.jpg);
     background-size:100vw;
     background-repeat: no-repeat;
     width: 99vw;
