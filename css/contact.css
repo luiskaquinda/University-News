@@ -161,6 +161,13 @@ a {
 fieldset {
     border: .2px solid #8d8d8d;
     border-radius: 4px;
+
+    cursor: pointer;
+    transition: .01s;
+}
+
+fieldset:hover {
+    border: 2px solid #a4a3a3;
 }
 
 fieldset legend {
@@ -214,20 +221,30 @@ ul li {
     flex: 1 1 100%;
 }
 
-.social-networks ul li {
-    display: inline;
+i {
+    width: 20px;
+    height: 20px;
+}
+
+.social-networks ul {
+    display: flex;
+    margin-top: 8px;
 }
 
 .social-networks ul li a img {
-    max-width: 20%;
-    margin: 8px 2px;
+    display: block;
+    width: 34px; 
+    height: 34px;
+    margin: 4px 2px;
 
     transition: .3s;
+    padding: 4px;
 }
 
 .social-networks ul li a img:hover {
     background: #bb3333;
     border-radius: 4px;
+    color: white;
 }
 
 .form-components {
