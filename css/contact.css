@@ -1,0 +1,389 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Modifica o scroll*/
+/*Firefox*/
+
+* {
+    scrollbar-width: 12px;
+    scrollbar-color: orange orange;
+}
+
+:root {
+    --color-green: #299d59;
+}
+
+/* Chrome, Edge e Safari */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #ff3333a9;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #ffffffda;
+    border-radius: 10px;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3px;
+    flex: 1 1 100vw;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-size: 14px;
+    overflow-x: hidden; 
+}
+
+p {
+    font-size: 18px;
+}
+
+header, nav, main, aside, footer {
+    display: flex;
+    margin: 3px;
+}
+
+header {
+    flex: 1 1 100%;
+    align-items: center;
+}
+
+header #logo {
+    flex: 0 1 200px;
+    font-size: 16px;
+    font-weight: 500;
+    padding-left: 4px;
+    margin-left: 20px;
+    line-height: 1;
+    border-left: 4px solid #bb3333;
+}
+
+header .strong {
+    color: #299d59;
+}
+
+#openMenu, #closeMenu {
+    border: none;
+    background: none;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0px 5px 0px 5px;
+    cursor: pointer;
+    display: none;
+}
+
+nav {
+    flex: 1 1 100vw;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+nav {
+    flex: 1 1 100vw;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+nav a {
+    margin: 1%;
+    font-size: 16px;
+    color: #212121;
+}
+
+main {
+    flex: 1 1 0;
+    background: #c8c8c83c;
+
+    flex-wrap: wrap;
+    overflow: auto;
+}
+
+main section {
+    width: auto;
+    height: 100vh;
+}
+
+footer {
+    flex: 1 1 100vw;
+    height: 30px;
+    width: 100vw; 
+    background: #bb3333;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+#openMenu, #closeMenu {
+    border: none;
+    background: none;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0px 5px 0px 5px;
+    cursor: pointer;
+    display: none;
+}
+
+#menu li {
+    list-style: none;
+    margin: 8px;
+}
+
+#menu a {
+    padding: 4px;
+}
+
+#menu a:not(#cantact):hover {
+    color: white;
+    background: #c60707f0;
+    border-radius: 4px;
+    transition: .8s;
+}
+
+#contact {
+    color: #212121;
+    border: 2px solid #c60707f0;
+    border-radius: 4px;
+}
+
+fieldset {
+    border: .2px solid #8d8d8d;
+    border-radius: 4px;
+
+    cursor: pointer;
+    transition: .01s;
+}
+
+fieldset:hover {
+    border: 2px solid #a4a3a3;
+}
+
+fieldset legend {
+    color: #3f3f3f;
+
+    font-size: 21px;
+    padding: 4px;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+
+    width: auto;
+    margin-top: 54px;
+    padding: 12px;
+}
+
+.our-contacts {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+
+    row-gap: 14px;
+    margin-top: 32px;
+    padding: 0px 12px;
+}
+
+.our-contacts h2 {
+    color: #cd2a2a;
+}
+
+
+ul li {
+    list-style: none;
+}
+
+.phone-street {
+    flex: 1 1 100%;
+}
+
+.our-phone-email-street .phone-street ul li p {
+    margin: 8px 4px;
+    color: #3f3f3f;
+}
+
+.social-networks {
+    flex: 1 1 100%;
+}
+
+i {
+    width: 20px;
+    height: 20px;
+}
+
+.social-networks ul {
+    display: flex;
+    margin-top: 8px;
+}
+
+.social-networks ul li a img {
+    display: block;
+    width: 34px; 
+    height: 34px;
+    margin: 4px 2px;
+
+    transition: .3s;
+    padding: 4px;
+}
+
+.social-networks ul li a img:hover {
+    background: #bb3333;
+    border-radius: 4px;
+    color: white;
+}
+
+.form-components {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    row-gap: 14px;
+    padding: 20px 24px;
+}
+
+.form-components div {
+    flex-grow: 1;
+}
+
+.name-contents, .email-contents {  
+    flex: 1 0 50%;
+}
+
+.name-contents, .email-contents, .message-contents, .buttons-contents {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+
+    gap: 2px;
+}
+
+.name-contents, .email-contents, .message-contents {
+    padding: 8px;
+}
+
+.buttons-contents {
+    padding: 0px 0px 0px 8px;
+    margin-top: 0px;
+    column-gap: 8px;
+}
+
+.buttons-contents input {
+    border: 0;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+}
+
+.buttons-contents input:nth-child(1) {
+    background: #1abf59;
+    transition: .6s;
+}
+
+.buttons-contents input:nth-child(2) {
+    background: #e43030;
+    transition: .6s;
+}
+
+.buttons-contents input:nth-child(1):hover {
+    background: #2be874;
+}
+
+.buttons-contents input:nth-child(2):hover {
+    background: #f73737;
+}
+
+.name-label, .email-label, .message-label {
+    font-size: 15px;
+    color: #3f3f3f;
+}
+
+.name-label, .email-label {
+    flex: 1 1 50%;
+} 
+
+#fname, #femail, #fmessage {
+    border: 1px solid #d6d6d6;
+}
+
+#fname::-webkit-input-placeholder, #femail::-webkit-input-placeholder, #fmessage::-webkit-input-placeholder {
+    font-family: 'Roboto', Helvetica, sans-serif;
+    opacity: 0.5;
+}
+
+#fmessage::-webkit-input-placeholder {
+    line-height: 1;
+}
+
+.form-components input:focus, .form-components textarea:focus {
+    outline: #a4a3a3 solid 2px;
+    border-radius: 2px;
+}
+
+#fname, #femail {
+    flex: 1 1 50%;
+    padding: 10px;
+}
+
+#fname:hover, #femail:hover, #fmessage:hover {
+    border: 1px solid #a4a3a3;
+}
+
+#fmessage {
+    flex: 1 1 100%;
+    padding: 10px;
+}
+
+.message-label {
+    flex: 1 1 100%;
+}
+
+.buttons-contents {
+    flex: 1 1 100%;
+}
+
+footer h2 {
+    font-size: 14px;
+    color: #e2e2e2;
+}
+
+
+/*
+======================================
+MEDIA QUERIES
+======================================
+*/
+
+
+@media only screen and (max-width: 767px) {
+    .container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    
+        flex-direction: column-reverse;
+        width: auto;
+        height: 100vh;
+        padding: 12px;
+    }
+
+    .our-contacts {
+        align-items: flex-start;
+        justify-content: center;
+    }
+}
