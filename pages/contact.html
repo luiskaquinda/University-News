@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../css/contact.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    
+    <header>
+        <a href="../index.html" id="logo">University <br><strong class="strong">News</strong></a>
+
+        <button id="openMenu">&#9776;</button>
+
+        <nav id="menu">
+            <button id="closeMenu">X</button>
+            <li><a href="../index.html" id="home">Início</a></li>
+            <li><a href="#" id="cat">Categórias</a></li>
+            <li><a href="#" id="articles">Artigos</a></li>
+            <li><a href="#" id="interview">Entrevistas</a></li>
+            <li><a href="pages/contact.html" id="contact">Contacto</a></li>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container">
+
+            <div class="our-contacts">
+                
+                <div class="our-phone-email-street">
+                    <h2 class="subtitle">Nossos Contactos</h2>
+
+
+                    <div class="phone-street">
+                        <ul>
+                            <li><p>universitynews@ukb.edu</p></li>
+                            <li><p>(+244) 939 434 550 <br> (+244) 929 796 849</p></li>
+                            <li><p>Rua Aires de Almeida Santos</p></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="our-social-networks">
+                    <h2 class="subtitle">Nossas Redes</h2>
+
+
+                    <div class="social-networks">
+                        <ul>
+                            <li><a href="#"><img src="../assets/icons/facebook-logo.svg" alt="logotipo do facebook"></a></li>
+                            <li><a href="#"><img src="../assets/icons/instagram-logo.svg" alt="logotipo do facebook"></a></li>
+                            <li><a href="#"><img src="../assets/icons/youtube-logo.svg" alt="logotipo do facebook"></a></li>
+                            <li><a href="#"><img src="../assets/icons/whatsapp-logo.svg" alt="logotipo do facebook"></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <form action="">
+                <fieldset class="form-components">
+                    <legend>Fale Connosco</legend>
+
+                    <div class="name-contents">
+                        <label for="fname" class="name-label">Nome</label>
+                        <input type="text" id="fname" name="name" placeholder="Digite aqui o seu nome" required>
+                    </div>
+
+                    <div class="email-contents">
+                        <label for="femail" class="email-label">Email</label>
+                        <input type="email" id="femail" name="email" required placeholder="eg. email@gmail.com">
+                    </div>
+
+                    <div class="message-contents">
+                        <label for="fmessage" class="message-label">Mensagem</label>
+                        <textarea name="message" id="fmessage" cols="50" rows="10" placeholder="Escreva para nós"></textarea>
+                    </div>
+
+                    <div class="buttons-contents">
+                        <input type="submit" id="fsubmit" value="Enviar">
+                        <input type="submit" id="fclear" value="Limpar">
+                    </div>
+
+                </fieldset>
+            </form>
+
+        </section>
+    </main>
+    
+    <footer id="footer">
+        <h2>University News &copy; 2023 - Todos os direitos reservados</h2>
+    </footer> 
+    
+    
+    <!-- Scripts -->
+    
+    <script type="text/javascript">
+
+        let categories = document.querySelector('.categories')
+        let button = document.querySelector('#cat');
+
+        button.addEventListener('click', () => {
+            categories.style.display = 'flex';
+        })
+
+        openMenu.addEventListener('click', () => {
+            menu.style.display = 'flex';
+
+            menu.style.right = (menu.offsetWidth * -1) + 'px';
+            
+            openMenu.style.display = 'none';
+
+            setTimeout(() => {
+                menu.style.opacity = '1';
+                menu.style.right = '0';
+            }, 10)
+            
+        })
+
+        closeMenu.addEventListener('click', () => {
+            menu.style.opacity = '0';
+
+            menu.style.right = (menu.offsetWidth * -1) + 'px';
+
+            setTimeout(() => {
+                menu.removeAttribute('style');
+                openMenu.removeAttribute('style');
+            }, 200)
+        })
+    </script>
+</body>
+</html>
