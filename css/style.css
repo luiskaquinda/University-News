@@ -235,7 +235,7 @@ main > h1 {
 
 .title {
     color: #c60707e7;
-    font-size: 18pt;
+    font-size: 16pt;
 }
 
 footer h2 {
@@ -331,7 +331,7 @@ BUNNER CSS
 }
 
 .bunner-content .slide-container .slide .content-slider p{
-    font-size: 16px;
+    font-size: 12.5pt;
     color: #ffffff;
     font-family: 'Roboto', sans-serif;
     font-style: italic;
