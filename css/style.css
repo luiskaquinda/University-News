@@ -228,13 +228,14 @@ main > h1 {
 }
 
 .content p {
-    font-size: 14px;
+    font-size: 14pt;
     padding: 4px 0px;
     color: #545454;
 }
 
 .title {
     color: #c60707e7;
+    font-size: 18pt;
 }
 
 footer h2 {
@@ -395,7 +396,7 @@ BUNNER CSS
 .bunner-content #prev, 
 .bunner-content #next {
     position: absolute;
-    top:50%;
+    top: 35%;
     transform: translateY(-50%);
     color: #ffffff;
     height: 40px;
@@ -570,12 +571,90 @@ END BUNNER CSS
 
 
     .bunner-content .slide-container .slide .content-slider p{
-        font-size: 16px;
+        font-size: 14px;
         color: #ffffff;
         font-family: 'Noto Sans', sans-serif;
         width: 70%;
         height: 10%;
     
+    }
+
+    .container {
+        row-gap: 16px;
+    }
+
+    .news {
+        flex-direction: column;
+        align-items: start;
+        row-gap: 16px;
+    }
+
+    footer h2 {
+        font-size: 12px;
+        color: #e2e2e2;
+    }
+
+    .bunner-content #next {
+        right: 0;
+        top: 54%;
+    } 
+    
+    .bunner-content #prev {
+        left: 0;
+        top: 54%;
+    }
+
+    .bunner-content .slide-container .slide .content-slider {
+        padding: 14px;
+    }
+
+    .bunner-content .slide-container:nth-child(1) .slide {
+        background: url(../assets/image/1.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+    
+    .bunner-content .slide-container:nth-child(2) .slide {
+        background: url(../assets/image/1.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+    
+    .bunner-content .slide-container:nth-child(3) .slide {
+        background: url(../assets/image/2.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;  
+    }
+}
+
+@media(max-width: 425px){
+
+    .bunner-content #next {
+        right: 0;
+        top: 54%;
+    } 
+    
+    .bunner-content #prev {
+        left: 0;
+        top: 54%;
+    }
+
+
+    .bunner-content .slide-container .slide .content-slider p{
+        font-size: 14px;
+        color: #ffffff;
+        font-family: 'Noto Sans', sans-serif;
+        width: 70%;
+        height: 10%;
+
+        margin-top: 4px;
+        margin-bottom: 4px;
     }
 
     .container {

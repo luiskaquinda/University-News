@@ -91,7 +91,7 @@ nav a {
 }
 
 main {
-    flex: 1;
+    flex: 1 0 100vw;
     background: #c8c8c83c;
 
     flex-wrap: wrap;
@@ -103,6 +103,8 @@ main section {
     height: 100%;
 }
 
+
+
 footer {
     flex: 1 1 100vw;
     height: 30px;
@@ -111,6 +113,51 @@ footer {
     justify-content: center;
     align-items: center;
     border-radius: 4px;
+}
+
+.news-details {
+    height: 10%;
+    width: 100%;
+}
+
+.card {
+    width: 100%;
+}
+
+.card ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 110px;
+    padding: 0px 20px;
+}
+
+.card ul li:nth-child(1) {
+    flex: 0 1 10px;
+}
+
+.card ul li:nth-child(2) {
+    flex: 1 0 10px;
+
+    font-size: 12pt;
+    margin-left: 4px;
+}
+
+.card ul li:nth-child(3) {
+    flex: 1 0 10px;
+    font-size: 12pt;
+
+    background: #d61e1e;
+    color: white;
+    padding: 4px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card ul li img {
+    width: 72px;
+    height: 72px;
+    border-radius: 100%;
 }
 
 .container, .new {
@@ -187,6 +234,14 @@ a {
 
     background: #c4ecfd0e;
     padding: 16px;
+}
+
+.card ul {
+    
+}
+
+.card ul li {
+    list-style: none;
 }
 
 #footer h2 {

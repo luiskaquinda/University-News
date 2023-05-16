@@ -301,11 +301,11 @@ i {
 }
 
 .buttons-contents input:nth-child(1):hover {
-    background: #2be874;
+    background: #178642;
 }
 
 .buttons-contents input:nth-child(2):hover {
-    background: #f73737;
+    background: #b02525;
 }
 
 .name-label, .email-label, .message-label {
