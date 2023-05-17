@@ -102,9 +102,14 @@ main section {
     margin: 10px;
 }
 
+main section article {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
 aside {
     flex: 1 1 200px;
-    
+
 }
 
 footer {
@@ -208,10 +213,10 @@ main > h1 {
 
 .content a {
     font-size: 16px;
-    color: rgba(23, 23, 23, 0.907);
+    color: rgba(255, 255, 255, 0.907);
     font-weight: 400;
 
-    background: linear-gradient(to right, transparent, #fd2727);
+    background: linear-gradient(to left, transparent, #fd2727);
     border-radius: 4px;
     padding: 2px;
     transition: .3s;
@@ -223,7 +228,7 @@ main > h1 {
 
     background: linear-gradient(to left, transparent, #fd2727);
     border-radius: 4px;
-    padding: 4px;
+    padding: 5px;
     margin-top: 8px;
 }
 
@@ -556,6 +561,52 @@ END BUNNER CSS
     .categories ul {
         flex-direction: column;
     }
+
+    .bunner-content #next {
+        right: 0;
+        top: 54%;
+    } 
+    
+    .bunner-content #prev {
+        left: 0;
+        top: 54%;
+    }
+
+    .bunner-content .slide-container .slide .content-slider {
+        padding: 14px;
+    }
+
+    .bunner-content .slide-container .slide .content-slider p{
+        font-size: 14px;
+        color: #ffffff;
+        font-family: 'Noto Sans', sans-serif;
+        width: 70%;
+        height: 10%;
+    }
+
+    .bunner-content .slide-container:nth-child(1) .slide {
+        background: url(../assets/image/1.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+    
+    .bunner-content .slide-container:nth-child(2) .slide {
+        background: url(../assets/image/1.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+    
+    .bunner-content .slide-container:nth-child(3) .slide {
+        background: url(../assets/image/2.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;  
+    }
 }
 
 @media(max-width: 500px){
@@ -576,7 +627,6 @@ END BUNNER CSS
         font-family: 'Noto Sans', sans-serif;
         width: 70%;
         height: 10%;
-    
     }
 
     .container {
@@ -670,5 +720,22 @@ END BUNNER CSS
     footer h2 {
         font-size: 12px;
         color: #e2e2e2;
+    }
+}
+
+@media(max-width: 425px) {
+    .bunner-content .slide-container .slide .content-slider h3 {
+        font-size: 16pt;
+    }
+
+    .bunner-content .slide-container .slide .content-slider p{
+        font-size: 10pt;
+        color: #ffffff;
+        font-family: 'Noto Sans', sans-serif;
+        width: 70%;
+        height: 10%;
+
+        margin-top: 4px;
+        margin-bottom: 4px;
     }
 }
