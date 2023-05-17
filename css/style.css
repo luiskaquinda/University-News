@@ -267,6 +267,7 @@ header .strong {
     display: flex;
     justify-content: center;
     list-style: none;
+    flex-wrap: wrap;
     gap: 12px;
     margin: 24px;
 }
@@ -276,12 +277,14 @@ header .strong {
     color: rgb(74, 74, 74);
     padding: 8px;
     border-radius: 4px;
+    transition: .4s;
 }
 
 .categories ul li:hover {
     cursor: pointer;
+    background: #242424;
+    color: white;
 }
-
 
 .categories {
     width: 100vw;
@@ -489,9 +492,6 @@ END BUNNER CSS
         width: 100vw;
     }
 
-    .categories ul {
-        flex-direction: column;
-    }
 
     .bunner-content #prev{
         left: 0px;
@@ -556,10 +556,6 @@ END BUNNER CSS
         max-width: 100vw;
         max-height: 10vh;
         width: 100vw;
-    }
-
-    .categories ul {
-        flex-direction: column;
     }
 
     .bunner-content #next {
