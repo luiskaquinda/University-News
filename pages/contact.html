@@ -11,17 +11,17 @@
 <body>
     
     <header>
-        <a href="../index.html" id="logo">University <br><strong class="strong">News</strong></a>
+        <a href="/index.html" id="logo">University <br><strong class="strong">News</strong></a>
 
         <button id="openMenu">&#9776;</button>
 
         <nav id="menu">
             <button id="closeMenu">X</button>
-            <li><a href="../index.html" id="home">Início</a></li>
-            <li><a href="#" id="cat">Categórias</a></li>
-            <li><a href="#" id="articles">Artigos</a></li>
-            <li><a href="#" id="interview">Entrevistas</a></li>
-            <li><a href="pages/contact.html" id="contact">Contacto</a></li>
+            <a href="/index.html" id="home">Início</a>
+            <a href="#" id="cat">Categórias</a>
+            <a href="#" id="articles">Artigos</a>
+            <a href="#" id="interview">Entrevistas</a>
+            <a href="pages/contact.html" id="contact">Contacto</a>
         </nav>
     </header>
 
@@ -97,13 +97,6 @@
     <!-- Scripts -->
     
     <script type="text/javascript">
-
-        let categories = document.querySelector('.categories')
-        let button = document.querySelector('#cat');
-
-        button.addEventListener('click', () => {
-            categories.style.display = 'flex';
-        })
 
         openMenu.addEventListener('click', () => {
             menu.style.display = 'flex';
