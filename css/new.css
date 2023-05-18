@@ -91,7 +91,7 @@ nav a {
 }
 
 main {
-    flex: 1;
+    flex: 1 0 100vw;
     background: #c8c8c83c;
 
     flex-wrap: wrap;
@@ -103,6 +103,8 @@ main section {
     height: 100%;
 }
 
+
+
 footer {
     flex: 1 1 100vw;
     height: 30px;
@@ -111,6 +113,52 @@ footer {
     justify-content: center;
     align-items: center;
     border-radius: 4px;
+}
+
+.news-details {
+    height: 10%;
+    width: 100%;
+}
+
+.card {
+    width: 100%;
+}
+
+.card ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0px 110px;
+    padding: 0px 20px;
+}
+
+.card ul li:nth-child(1) {
+    flex: 0 1 10px;
+}
+
+.card ul li:nth-child(2) {
+    flex: 1 0 10px;
+
+    font-size: 12pt;
+    margin-left: 4px;
+}
+
+.card ul li:nth-child(3) {
+    flex: 1 0 10px;
+    font-size: 12pt;
+
+    background: #d61e1e;
+    color: white;
+    padding: 3px 3px;
+    border-radius: 8px;
+    text-align: start;
+}
+
+.card ul li img {
+    width: 72px;
+    height: 72px;
+    border-radius: 100%;
 }
 
 .container, .new {
@@ -175,9 +223,11 @@ a {
     padding: 4px;
     border-radius: 4px;
 
-    font-size: 24px;
+    font-size: 16pt;
     color: #ffffff;
     margin: 10px 0px;
+
+    text-align: center;
 }
 
 .new-body p {
@@ -187,6 +237,10 @@ a {
 
     background: #c4ecfd0e;
     padding: 16px;
+}
+
+.card ul li {
+    list-style: none;
 }
 
 #footer h2 {
@@ -252,5 +306,31 @@ a {
 
     #footer h2 {
         font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+
+    .card ul {
+        margin: 0px 22px;
+    }
+
+    .card ul li:nth-child(1) {
+        flex: 0 1 0%;
+    } 
+    
+    .card ul li:nth-child(2) {
+        flex: 1 0 50%;
+    }
+    
+    .card ul li:nth-child(3) {
+        flex: 1 0 100%;
+        font-size: 12pt;
+    
+        background: #d61e1e;
+        color: white;
+        padding: 4px;
+        border-radius: 10px;
+        text-align: center;
     }
 }
